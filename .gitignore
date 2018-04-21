@@ -6,7 +6,7 @@
 Makefile
 Makefile.Debug
 Makefile.Release
-object_script/
+object_script.*
 
 # Compiler generated files
 ui_*.h
