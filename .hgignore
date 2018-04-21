@@ -1,0 +1,11 @@
+.+\.pro\.user
+Makefile
+Makefile\.Debug
+Makefile\.Release
+object_script\..+
+ui_.+\.h
+moc_.+\.cpp
+.+\.o
+debug/\.*
+release/\.*
+deploy/\.*

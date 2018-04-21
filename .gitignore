@@ -1,0 +1,22 @@
+# Mercurial files
+/.hg/
+
+# IDE specific files
+*.pro.user
+Makefile
+Makefile.Debug
+Makefile.Release
+object_script/
+
+# Compiler generated files
+ui_*.h
+moc_*.cpp
+*.o
+/debug/
+/release/
+
+# Deployed files
+/deploy/
+
+# Other files
+*.w

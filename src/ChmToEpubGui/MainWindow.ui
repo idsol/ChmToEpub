@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>636</width>
+    <height>479</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>ChmToEpub</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0" rowspan="4">
+     <widget class="QListWidget" name="inputFilesListWidget">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Minimum">
+        <horstretch>1</horstretch>
+        <verstretch>1</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="acceptDrops">
+       <bool>true</bool>
+      </property>
+      <property name="editTriggers">
+       <set>QAbstractItemView::NoEditTriggers</set>
+      </property>
+      <property name="alternatingRowColors">
+       <bool>true</bool>
+      </property>
+      <property name="selectionMode">
+       <enum>QAbstractItemView::MultiSelection</enum>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QPushButton" name="addInputFilesButton">
+      <property name="text">
+       <string>Add Input Files...</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QPushButton" name="removeInputFileButton">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="text">
+       <string>Remove Input File</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QPushButton" name="clearInputFilesButton">
+      <property name="text">
+       <string>Clear Input Files</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="1">
+     <widget class="QCheckBox" name="verboseSwitch">
+      <property name="text">
+       <string>&amp;Verbose</string>
+      </property>
+     </widget>
+    </item>
+    <item row="8" column="1">
+     <widget class="QCheckBox" name="overwriteSwitch">
+      <property name="text">
+       <string>&amp;Overwrite</string>
+      </property>
+     </widget>
+    </item>
+    <item row="9" column="1">
+     <widget class="QPushButton" name="convertButton">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>&amp;Convert</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="0" rowspan="4">
+     <widget class="QTextEdit" name="logEdit">
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="0">
+     <widget class="QLineEdit" name="outputDirEdit"/>
+    </item>
+    <item row="5" column="1">
+     <widget class="QPushButton" name="outputDirButton">
+      <property name="text">
+       <string>Output Dir...</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="0">
+     <widget class="QLineEdit" name="outputFileEdit"/>
+    </item>
+    <item row="4" column="1">
+     <widget class="QPushButton" name="outputFileButton">
+      <property name="text">
+       <string>Output File...</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <tabstops>
+  <tabstop>inputFilesListWidget</tabstop>
+  <tabstop>addInputFilesButton</tabstop>
+  <tabstop>outputFileEdit</tabstop>
+  <tabstop>outputFileButton</tabstop>
+  <tabstop>outputDirEdit</tabstop>
+  <tabstop>outputDirButton</tabstop>
+  <tabstop>verboseSwitch</tabstop>
+  <tabstop>overwriteSwitch</tabstop>
+  <tabstop>convertButton</tabstop>
+  <tabstop>logEdit</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
