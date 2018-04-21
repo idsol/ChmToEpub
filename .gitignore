@@ -12,6 +12,7 @@ object_script/
 ui_*.h
 moc_*.cpp
 *.o
+/build/
 /debug/
 /release/
 
